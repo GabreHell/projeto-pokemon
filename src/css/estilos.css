@@ -1,0 +1,263 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	max-width: 1280px;
+	margin: 0 auto;
+	background-color: #5e5b5bad;
+	color: #333333;
+}
+
+body.modo-escuro {
+	background-color: #212121;
+	color: #f5f5f5;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 25px;
+}
+
+header .logo,
+header .imagem-botao {
+	width: 30px;
+	transition: 0.2s ease-in-out;
+}
+
+header .logo2 {
+	height: 30px;
+	transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema {
+	background: none;
+	border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+header .logo2:hover,
+main .cartao-pokemon-azul:hover,
+main .cartao-pokemon-verde:hover,
+main .cartao-pokemon-laranja:hover,
+main .cartao-pokemon-roxo:hover {
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
+main {	padding: 25px;
+}
+
+main .listagem-pokemon {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+}
+
+main .cartao-pokemon-azul,
+main .cartao-pokemon-verde,
+main .cartao-pokemon-laranja,
+main .cartao-pokemon-roxo {
+	background-color: #d8e3ec;
+	width: 200px;
+	height: 325px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	border-radius: 15px;
+	transition: 0.2s ease-in-out;
+}
+
+main .cartao-pokemon-azul:hover {
+	background-color: #96d9d6;
+	box-shadow: 10px 8px 5px  rgb(80, 78, 78);
+}
+
+main .cartao-pokemon-verde:hover {
+	background-color: #9bcf99;
+	box-shadow: 10px 8px 5px  rgb(80, 78, 78);
+}
+
+main .cartao-pokemon-laranja:hover {
+	background-color: #e9ba56;
+	box-shadow: 10px 8px 5px  rgb(80, 78, 78);
+}
+
+main .cartao-pokemon-roxo:hover {
+	background-color: #a98bca;
+	box-shadow: 10px 8px 5px  rgb(80, 78, 78);
+}
+
+.modo-escuro .cartao-pokemon-azul,
+.modo-escuro .cartao-pokemon-verde,
+.modo-escuro .cartao-pokemon-laranja,
+.modo-escuro .cartao-pokemon-roxo {
+	background-color: #a8a8a8;
+}
+
+.modo-escuro .cartao-pokemon-azul:hover,
+.modo-escuro .cartao-pokemon-verde:hover,
+.modo-escuro .cartao-pokemon-laranja:hover,
+.modo-escuro .cartao-pokemon-roxo:hover {
+	background-color: #696666;
+	box-shadow: 10px 8px 5px  rgb(22, 22, 22);
+}
+
+main .cartao-pokemon-azul .informacoes,
+main .cartao-pokemon-verde .informacoes,
+main .cartao-pokemon-laranja .informacoes,
+main .cartao-pokemon-roxo .informacoes {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #333333;
+	border-radius: 10px;
+}
+main .cartao-pokemon-azul:hover .informacoes,
+main .cartao-pokemon-verde:hover .informacoes,
+main .cartao-pokemon-laranja:hover .informacoes,
+main .cartao-pokemon-roxo:hover .informacoes {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #ffffff;
+	border-radius: 10px;
+}
+
+.modo-escuro .cartao-pokemon-azul .informacoes,
+.modo-escuro .cartao-pokemon-verde .informacoes,
+.modo-escuro .cartao-pokemon-laranja .informacoes,
+.modo-escuro .cartao-pokemon-roxo .informacoes {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #ffffff;
+	border-radius: 10px;
+}
+.modo-escuro .cartao-pokemon-azul:hover .informacoes {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #39bdb2fb;
+	border-radius: 10px;
+}
+.modo-escuro .cartao-pokemon-verde:hover .informacoes {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #7ac74c;
+	border-radius: 10px;
+}
+.modo-escuro .cartao-pokemon-laranja:hover .informacoes {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #ee8130;
+	border-radius: 10px;
+}
+.modo-escuro .cartao-pokemon-roxo:hover .informacoes {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #a98bca;
+	border-radius: 10px;
+}
+
+main .cartao-pokemon-azul .informacoes,
+main .cartao-pokemon-verde .informacoes,
+main .cartao-pokemon-laranja .informacoes,
+main .cartao-pokemon-roxo .informacoes span {
+	padding: 5px;
+	text-transform: uppercase;
+	font-size: 17px;
+}
+main .cartao-pokemon-azul:hover .informacoes,
+main .cartao-pokemon-verde:hover .informacoes,
+main .cartao-pokemon-laranja:hover .informacoes,
+main .cartao-pokemon-roxo:hover .informacoes span {
+	padding: 5px;
+	text-transform: uppercase;
+	font-size: 17px;
+	color: #ffffff;
+}
+
+main .cartao-pokemon-azul .gif,
+main .cartao-pokemon-verde .gif,
+main .cartao-pokemon-laranja .gif,
+main .cartao-pokemon-roxo .gif {
+	width: 90px;
+	height: 90px;
+}
+main .cartao-pokemon-azul .tipos,
+main .cartao-pokemon-verde .tipos,
+main .cartao-pokemon-laranja .tipos,
+main .cartao-pokemon-roxo .tipos {
+	display: flex;
+	gap: 15px;
+}
+
+main .cartao-pokemon-azul .tipo,
+main .cartao-pokemon-verde .tipo,
+main .cartao-pokemon-laranja .tipo,
+main .cartao-pokemon-roxo .tipo {
+	padding: 8px;
+	border-radius: 10px;
+}
+
+main .cartao-pokemon-azul:hover .tipo,
+main .cartao-pokemon-verde:hover .tipo,
+main .cartao-pokemon-laranja:hover .tipo,
+main .cartao-pokemon-roxo:hover .tipo {
+	padding: 8px;
+	border-radius: 10px;
+	color: #ffffff;
+}
+
+.grama {
+	background-color: #7ac74c;
+}
+
+.veneno {
+	background-color: #df67ddfb;
+}
+
+.fogo {
+	background-color: #ee8130;
+}
+
+.agua {
+	background-color: #6390f0;
+}
+
+.inseto {
+	background-color: #a6b91a;
+}
+
+.dragao {
+    background-color: #b83451fb;
+}
+
+.voador {
+    background-color: #39bdb2fb;
+}
+
+main .descricao {
+	max-height: 80px;
+	overflow-y: scroll;
+	font-size: 14px;
+	padding-right: 10px;
+}
+main .cartao-pokemon-azul:hover .descricao,
+main .cartao-pokemon-verde:hover .descricao,
+main .cartao-pokemon-laranja:hover .descricao,
+main .cartao-pokemon-roxo:hover .descricao {
+	color: #ffffff;
+}
+
+.modo-escuro .cartao-pokemon-verde:hover .descricao{
+	color: #7ac74c;
+}
+.modo-escuro .cartao-pokemon-laranja:hover .descricao{
+	color: #ee8130;
+}
+.modo-escuro .cartao-pokemon-azul:hover .descricao{
+	color: #39bdb2fb;
+}
+.modo-escuro .cartao-pokemon-roxo:hover .descricao{
+	color: #a98bca;
+}
